@@ -7,26 +7,36 @@
     <link rel="stylesheet" href="src/style.css" />
   </head>
   <body>
-    <header>
-      <h1>Welcome to the Poem Generator</h1>
-    </header>
-    <main>
-      <form>
-        <input type="text" placeholder="Enter the topic of the poem" />
-        <input type="submit" />
-      </form>
-      <div>``God could not be everywhere, and therefore he made mothers.'</div>
-    </main>
+    <div class="container">
+      <header>
+        <h1>Poem Generator</h1>
+      </header>
+      <main>
+        <form>
+          <input
+            class="instructions"
+            type="text"
+            placeholder="Enter the topic of the poem"
+            autofocus="required"
+            autocomplete="off"
+          />
+          <input class="submit-button" type="submit" />
+        </form>
+        <div class="poem">
+          ``God could not be everywhere, and therefore he made mothers.'
+        </div>
+      </main>
 
-    <script src="src/index.js"></script>
-    <footer>
-      This project was coded by Claire Ingham and is open-sourced
+      <script src="src/index.js"></script>
+      <footer>
+        This project was coded by Claire Ingham and is open-sourced
 
-      <a
-        href="https://github.com/claireingham/Poem-Generator"
-        target="_blank"
-      ></a>
-      and hosted on Netlify
-    </footer>
+        <a
+          href="https://github.com/claireingham/Poem-Generator"
+          target="_blank"
+        ></a>
+        and hosted on Netlify
+      </footer>
+    </div>
   </body>
 </html>
