@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Poem Generator</title>
     <link rel="stylesheet" href="src/style.css" />
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
   </head>
   <body>
     <div class="container">
@@ -12,7 +13,7 @@
         <h1>Poem Generator</h1>
       </header>
       <main>
-        <form>
+        <form id="poem-generator-form">
           <input
             class="instructions"
             type="text"
@@ -22,12 +23,9 @@
           />
           <input class="submit-button" type="submit" />
         </form>
-        <div class="poem">
-          ``God could not be everywhere, and therefore he made mothers.'
-        </div>
+        <div class="poem" id="poem"></div>
       </main>
 
-      <script src="src/index.js"></script>
       <footer>
         This project was coded by Claire Ingham and is open-sourced
 
@@ -38,5 +36,6 @@
         and hosted on Netlify
       </footer>
     </div>
+    <script src="src/index.js"></script>
   </body>
 </html>
