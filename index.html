@@ -5,8 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Poem Generator</title>
     <link rel="stylesheet" href="src/style.css" />
-    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
   </head>
   <body>
     <div class="container">
@@ -19,17 +17,22 @@
             class="instructions"
             type="text"
             placeholder="Enter the topic of the poem"
-            autofocus="required"
+            autofocus
+            required
             autocomplete="off"
           />
           <input class="submit-button" type="submit" />
         </form>
-        <div class="poem" id="poem"></div>
+        <div class="poem" id="poem">
+          Poem goes here
+          <br />
+          and more poem here
+        </div>
       </main>
 
       <footer>
-        This project was coded by
-        <a href="https://github.com/claireingham" target="_blank">
+        This AI project was coded by
+        <a href="https://github.com/claireingham/" target="_blank">
           Claire Ingham
         </a>
         and is
@@ -37,13 +40,13 @@
         <a
           href="https://github.com/claireingham/Poem-Generator"
           target="_blank"
-          open
-          sourced
-          on
-          GitHub
-        ></a>
-        and is <a href="https://poesia-generator.netlify.app/?" target="_blank"
-        hosted on Netlify
+        >
+          open sourced on GitHub
+        </a>
+        and is
+        <a href="https://poesia-generator.netlify.app/?" target="_blank">
+          hosted on Netlify</a
+        >
       </footer>
     </div>
     <script src="src/index.js"></script>
